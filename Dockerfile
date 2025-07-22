@@ -12,11 +12,6 @@ ENV HOME /home/${NB_USER}
 
 USER root
 
-RUN pip install --upgrade jupyter \
-                jupyter_contrib_nbextensions
-
-RUN jupyter contrib nbextension install --system
-
 WORKDIR /home/jovyan
 
 ## These are the build templates etc
@@ -37,7 +32,6 @@ ADD resources/jupyter-config .jupyter
 
 RUN chown -R ${NB_UID} ${HOME}
 USER jovyan
-
 
 EXPOSE 8888
 ENTRYPOINT ["/usr/local/bin/tini", "--"]
