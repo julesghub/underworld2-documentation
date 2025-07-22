@@ -4,7 +4,7 @@
 # for details
 
 # SHA tagging of the publication version
-FROM underworldcode/underworld2:2.16.4b
+FROM underworldcode/underworld2:2.16.0-ompi
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
