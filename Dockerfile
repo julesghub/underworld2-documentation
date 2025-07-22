@@ -34,6 +34,5 @@ RUN chown -R ${NB_UID} ${HOME}
 USER jovyan
 
 EXPOSE 8888
-ENTRYPOINT ["/usr/local/bin/tini", "--"]
 
 CMD /home/jovyan/scripts/run-jupyter.sh -p 8888
