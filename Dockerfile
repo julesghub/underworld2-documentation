@@ -4,23 +4,13 @@
 # for details
 
 # SHA tagging of the publication version
-FROM underworldcode/underworld2:2.6.0b
+FROM underworldcode/underworld2:2.16.4b
 
 ENV NB_USER jovyan
 ENV NB_UID 1000
 ENV HOME /home/${NB_USER}
 
-# We have to do some manipulation as the root user to begin with.
-
 USER root
-
-## We can also build the static docs here but
-## we need python 3 for some of this - see the mkdocs_build_requirements.txt file for details
-
-## RUN pip install mkdocs \
-##                 mkdocs-material \
-##                 pygments \
-##                 pymdown-extensions
 
 RUN pip install --upgrade jupyter \
                 jupyter_contrib_nbextensions
