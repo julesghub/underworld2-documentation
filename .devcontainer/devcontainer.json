@@ -1,4 +1,4 @@
 {
   "name": "Underworld3",
-  "image": "underworldcode/underworld:2.16.4-ompi"
+  "image": "julesg/underworld2:2.16.4-mpich"
 }
