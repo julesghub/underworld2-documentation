@@ -1,7 +1,4 @@
 {
   "name": "Underworld3",
-    "build": {
-    "context": "..",
-    "dockerfile": "DOCKERFILE_GHCS"
-  },
+  "image": "docker.io/underworldcode/underworld:2.16.4-ompi"
 }
