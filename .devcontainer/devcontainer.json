@@ -1,4 +1,5 @@
 {
-  "name": "Underworld3",
-  "image": "julesg/underworld2:2.16.4-mpich"
+  "name": "devfun",
+  "image": "underworldcode/underworld2:2.16.4-mpich",
+  "postCreateCommand": "echo 'Ready!'",
 }
