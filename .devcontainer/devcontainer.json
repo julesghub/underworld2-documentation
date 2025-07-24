@@ -1,5 +1,14 @@
 {
+  // OLD "image": "underworldcode/underworld2:2.16.4-mpich",
   "name": "devfun",
-  "image": "underworldcode/underworld2:2.16.4-mpich",
-  "postCreateCommand": "echo 'Ready!'",
+  "build": {
+    "context": "..",
+    "dockerfile": "DOCKERFILE_GHCS"
+  },
+  // add micromamba to environment here for DOCKERFILE_GHCS
+  "features": {
+    "ghcr.io/mamba-org/devcontainer-features/micromamba:1": {
+      "channels": "conda-forge"
+    }
+  }
 }
