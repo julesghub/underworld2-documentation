@@ -6,3 +6,5 @@ RUN conda install -n base -c conda-forge mamba
 
 COPY .devcontainer/uw_environment.yml  /tmp/conda-tmp/
 RUN  mamba env update -n base --file /tmp/conda-tmp/uw_environment.yml 
+
+RUN pip install --no-cache-dir --no-build-isolation "underworld<=2.17"
